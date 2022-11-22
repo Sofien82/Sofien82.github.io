@@ -1,0 +1,9 @@
+.body {
+    @include box-sizing(100%, 100%);
+    @include font-text(16px, 400, $font-color--main, $main-font);
+    margin: 0;
+    margin-top: 60px;
+}
+
+
+

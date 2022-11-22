@@ -1,0 +1,57 @@
+
+.footer {
+    padding: 5%;
+    background-color: $bg-color--footer;
+    @include tablet-only{
+        height: 120px;
+    }
+    @include desktop-only{
+        padding: 2% 20%;
+        height: 120px;
+    }
+
+    .company-title {
+        @include font-text(20px, 400, $font-color--footer, $title-font);
+        margin-bottom: 20px;
+        @include tablet-only{
+            text-align: center;
+            font-size: 30px;
+            margin:0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__menu {
+        padding: 0;
+        @include tablet-only{
+            @include flexbox(row, space-between);
+            margin-bottom: 0;
+        }
+
+        &__item {
+            display: inline;
+
+            &__link {
+                @include flexbox(row, flex-start, center);
+                text-decoration: none;
+                color: $font-color--footer;
+                &:hover{
+                    transition: color 300ms;
+                    color: $color-secondary;
+                }
+
+                .icon-wrapper {
+                    @include box-sizing(14px, 14px);
+                    font-size: 14px;
+                    margin-right: 12px;
+                    align-self: baseline;
+                }
+
+                .link__text{
+                    margin-bottom: 10px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.header {
+    .location {
+        @include flexbox(row, center, center);
+        @include box-sizing(50px, 100%, 0, relative, $bg-color--location);
+        @include font-text(18px, 600);
+        column-gap: 18px;
+        box-shadow: inset 0 7px 9px -7px $black;
+    }
+
+    .main-header{
+        position: relative;
+        background-color: $bg-color;
+        @include desktop-only{
+            background-color: transparent;
+        }
+        padding: 0 11%;
+    
+    
+       
+    
+        .header-title {
+            @include flexbox(column, center, center);
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            z-index: 0;
+            @include desktop-only{
+                color: $font-color--footer;
+            }
+            
+            &__main {
+                font-size: 24px;
+                padding: 0 10%;
+                z-index: 10;
+            }
+            &__sub{
+                z-index: 10;
+            }
+        }
+    
+        &--btn-wrapper{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            padding-bottom: 50px;
+            z-index: 10;
+        }
+    
+    
+        .bg-img{
+            @include box-sizing(100%, 100%, 0, absolute);
+          @include absolute-positionning;
+            display: none;
+            @include desktop-only{
+                display: inline;
+            }
+                
+    
+            img{
+                @include box-sizing(100%, 100%, 0, absolute);
+                object-fit: cover;
+                @include absolute-positionning;
+                filter: blur(8px)  brightness(80%);
+                background-size: cover;
+            }
+            
+        }
+    }
+   
+}
+
+
+// make a box to hide the section titles behind 
+.section--menu__header, .section__header{
+    position: relative;
+    &:after{
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        background-color: $bg-color;
+        z-index: 5;
+    }
+}
+
+.section__header{
+    &:after{
+        @include desktop-only{
+            background-color: $white;
+        }
+    } 
+}
+

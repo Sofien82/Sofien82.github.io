@@ -1,0 +1,101 @@
+.btn {
+    @include font-text(16px);
+    @extend %box-shadow-style;
+    border: none;
+
+    &--explore {
+        position: relative;
+        padding: 15px 25px;
+        background: $color-gradient;
+        font-family: $main-font;
+        color: white;
+        text-decoration: none;
+        border-radius: 40px;
+
+        transition: transform 1s;
+        
+
+        &:before {
+            content: " ";
+            @include box-sizing(100%, 100%, 40px, absolute);
+            @include absolute-positionning;
+            background: $bg-color--card;
+            box-shadow: 10px 15px 16px $black;
+            opacity: 0;
+            transition: opacity 0.5s
+        }
+
+        &:hover {
+            cursor: pointer;
+            
+            transform: translate(-5px, -2px);
+
+            &:before {
+                opacity: 0.2;
+            }
+        }
+
+    }
+
+    &--functionning {
+        @include flexbox(row, flex-start, center);
+        @include box-sizing(80px, calc(100% - 2 * 5% - 12px), 20px);
+        background-color: $bg-color;
+        border-radius: 20px;
+        padding: 0 8%;
+        opacity: 0;
+
+        @include tablet-only {
+            padding: 0 3%;
+        }
+
+        @include desktop-only {
+            padding: 0 3%;
+        }
+
+        &__icon-box {
+            @include flexbox(row, flex-start, center);
+            @include box-sizing(100%, 50px);
+
+            .icon {
+                font-size: 24px;
+                width: 28px;
+            }
+        }
+
+        &__text {
+            font-weight: bold;
+        }
+
+        .index {
+            @include box-sizing(24px, 24px, 100%, absolute);
+            @include flexbox(row, center, center);
+            font-size: 12px;
+            background-color: $color-primary;
+            color: $font-color--footer;
+            left: -12px;
+        }
+    }
+}
+
+.btn-wrapper {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.active {
+    position: relative;
+
+    .icon {
+        color: $color-primary;
+    }
+
+    &::before {
+        content: " ";
+        @include box-sizing(100%, 100%, 20px, absolute);
+        @include absolute-positionning;
+        background-color: $color-primary;
+        opacity: 0.1;
+        z-index: 1;
+    }
+}

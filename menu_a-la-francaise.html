@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Oh My Food!</title>
+
+    <!-- favicon  -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo/ohmyfood.png">
+
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/0b857a3b0d.js" crossorigin="anonymous"></script>
+
+    <!-- css style sheet  -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+
+<body class="body body--menu">
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav id="nav" class="nav">
+        <a class="icon-arrow-wrapper" href="./index.html">
+            <i class="fas fa-arrow-left icon"></i>
+        </a>
+        <div class="logo">
+            <h4 class="company-title cursive-title">ohmyfood</h4>
+        </div>
+    </nav>
+
+    <main class="main--menu">
+        <section id="menu" class="menu">
+
+            <div class="menu_img">
+                <div class="image-wrapper">
+                    <img src="assets/images/restaurants/a-la-francaise.jpg" alt="picture restaurant à la française">
+                </div>
+            </div>
+
+            <form class="menu__content">
+
+                <header class="main__header">
+                    <h1 class="cursive-title">
+                        À la française
+                    </h1>
+                    <input class="checkbox checkbox--heart" type="checkbox" id="favorite3" />
+                    <label class="icon-wrapper icon-wrapper--heart" for="favorite3" >
+                        <i class="fas fa-heart icon icon--heart icon--heart--filled"></i>
+                        <span class="icon-hider"></span>
+                        <i class="fas fa-heart icon icon--heart icon--heart--empty"></i>
+                    </label>
+                </header>
+
+                <div class="container menu-wrapper">
+
+                    <div id="apetizer" class="section section--menu section--menu--apetizers">
+
+                        <div class="section--menu__header">
+                            <h3 class="section-title section-title--small">Entrées</h3>
+                        </div>
+
+                        <div class="section__content">
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="apetizer" id="apetizer1">
+                                <label class="menu-label" for="apetizer1"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Tartare de poulpe acidulé </h4>
+                                        <p class="card__content__text__info card-text--light">Aux zestes d'orange </p>
+                                    </div>
+                                    <div class="price">
+                                        <span>25€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu" >
+                                <input type="radio" class="radio-check" name="apetizer" id="apetizer2">
+                                <label class="menu-label" for="apetizer2"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Velouté de légumes d'antan </h4>
+                                        <p class="card__content__text__info card-text--light">Carotte, panais, topinambour</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>35€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="apetizer" id="apetizer3">
+                                <label class="menu-label" for="apetizer3"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Soupe à l'oignon</h4>
+                                        <p class="card__content__text__info card-text--light">Revisitée</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>20€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                        </div><!-- .section__content  -->
+                    </div><!-- #apetizer  -->
+
+                    <div id="dish" class="section section--menu section--menu--main">
+
+                        <div class="section--menu__header">
+                            <h3 class="section-title section-title--small">Plats</h3>
+                        </div>
+
+                        <div class="section__content">
+                            
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="main" id="main1">
+                                <label class="menu-label" for="main1"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Coquilles Saint-Jacques</h4>
+                                        <p class="card__content__text__info card-text--light">Accompagnées d'une purée de panais</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>40€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="main" id="main2">
+                                <label class="menu-label" for="main2"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Magret de canard</h4>
+                                        <p class="card__content__text__info card-text--light">Et parmentier de pommes de terre </p>
+                                    </div>
+                                    <div class="price">
+                                        <span>35€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="main" id="main3">
+                                <label class="menu-label" for="main3"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Pigeonneau d’Ille-et-Vilaine</h4>
+                                        <p class="card__content__text__info card-text--light">Sur son lit de gnocchis aux légumes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>44€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                        </div><!-- .section__content  -->
+                        <div class="separator"></div>
+
+                    </div><!-- #dish  -->
+
+                    <div id="dessert" class="section section--menu section--menu--dessert">
+
+                        <div class="section--menu__header">
+                            <h3 class="section-title section-title--small">Desserts</h3>
+                        </div>
+
+                        <div class="section__content">
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="dessert" id="dessert1">
+                                <label class="menu-label" for="dessert1"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Pétales de violettes glacés</h4>
+                                        <p class="card__content__text__info card-text--light">Et purée de noisettes</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>18€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="dessert" id="dessert2">
+                                <label class="menu-label" for="dessert2"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Fondant au chocolat</h4>
+                                        <p class="card__content__text__info card-text--light">Revisité</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>22€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                            <div class="card card--menu">
+                                <input type="radio" class="radio-check" name="dessert" id="dessert3">
+                                <label class="menu-label" for="dessert3"></label>
+                                <div class="card__content">
+                                    <div class="card__content__text">
+                                        <h4 class="card__content__text__title card-text--bold">Millefeuille croustillant</h4>
+                                        <p class="card__content__text__info card-text--light">Myrtilles et pâte d’amande</p>
+                                    </div>
+                                    <div class="price">
+                                        <span>23€</span>
+                                    </div>
+                                </div>
+                                <div class="icon-wrapper icon-wrapper--checkmark">
+                                    <i class="fas fa-check-circle icon icon--checkmark"></i>
+                                </div>
+                            </div>
+
+                        </div> <!-- .section__content  -->
+                        <div class="separator"></div>
+
+                    </div> <!-- #dessert -->
+                </div><!-- .container--wrapper  -->
+
+                <div class="btn-wrapper">
+                    <button class="btn btn--gradient btn--explore">Commander</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer">
+
+            <div class="fooer__header">
+                <h4 class="company-title">ohmyfood</h4>
+            </div>
+
+            <ul class="footer__menu">
+
+                <li class="footer__menu__item">
+                    <a class="footer__menu__item__link" href="">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <p class="link__text">Proposer un restaurant</p>
+                    </a>
+                </li>
+
+                <li class="footer__menu__item">
+                    <a class="footer__menu__item__link" href="">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <p class="link__text">Devenir partenaire</p>
+                    </a>
+                </li>
+
+                <li class="footer__menu__item">
+                    <a class="footer__menu__item__link" href="">
+                        <p class="link__text">Mentions légales</p>
+                    </a>
+                </li>
+
+                <li class="footer__menu__item">
+                    <a class="footer__menu__item__link" href="mailto:william.farre@gmail.com">
+                        <p class="link__text">Contact</p>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+    </footer>
+</body>
+</html>
